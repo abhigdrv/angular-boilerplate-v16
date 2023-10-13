@@ -7,11 +7,13 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { ChangeBgColorOnClickDirective } from './directives/change-bg-color-on-click.directive';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { MyHttpInterceptorInterceptor } from './interceptors/my-http.interceptor';
+import { MainComponent } from './layouts/main/main.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ChangeBgColorOnClickDirective
+    ChangeBgColorOnClickDirective,
+    MainComponent
   ],
   imports: [
     BrowserModule,
