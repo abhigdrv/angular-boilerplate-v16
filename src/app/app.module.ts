@@ -4,10 +4,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
+import { ChangeBgColorOnClickDirective } from './directives/change-bg-color-on-click.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ChangeBgColorOnClickDirective
   ],
   imports: [
     BrowserModule,
