@@ -1,6 +1,11 @@
 {
   "name": "angular-boilerplate-v16",
   "version": "0.0.0",
+  "author": {
+    "name": "Abhishek Vishwakarma",
+    "email": "abhishek@pmaxtek.com",
+    "url": "pmaxtek.com"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
