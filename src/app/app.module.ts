@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { ChangeBgColorOnClickDirective } from './directives/change-bg-color-on-click.directive';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { MyHttpInterceptorInterceptor } from './interceptors/my-http.interceptor';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,13 @@ import { ChangeBgColorOnClickDirective } from './directives/change-bg-color-on-c
       registrationStrategy: 'registerWhenStable:30000'
     })
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: MyHttpInterceptorInterceptor,
+      multi: true,
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
