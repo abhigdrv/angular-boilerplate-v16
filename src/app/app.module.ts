@@ -9,13 +9,15 @@ import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { MyHttpInterceptorInterceptor } from './interceptors/my-http.interceptor';
 import { HomeComponent } from './pages/home/home.component';
 import { ErrorComponent } from './pages/error/error.component';
+import { UpperCasePipe } from './pipes/upper-case.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     ChangeBgColorOnClickDirective,
     HomeComponent,
-    ErrorComponent
+    ErrorComponent,
+    UpperCasePipe
   ],
   imports: [
     BrowserModule,
