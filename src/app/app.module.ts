@@ -8,12 +8,14 @@ import { ChangeBgColorOnClickDirective } from './directives/change-bg-color-on-c
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { MyHttpInterceptorInterceptor } from './interceptors/my-http.interceptor';
 import { HomeComponent } from './pages/home/home.component';
+import { ErrorComponent } from './pages/error/error.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ChangeBgColorOnClickDirective,
-    HomeComponent
+    HomeComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
